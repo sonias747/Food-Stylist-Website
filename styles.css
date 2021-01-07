@@ -1,0 +1,285 @@
+/* -----------------------------  GLOBAL STYLES -------------------------    */
+
+body {
+    font-family: Palatino, sans-serif;     
+}
+
+.container {
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+h1 { 
+    color: #0a0a0a;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 60px 0px 0px;  
+}
+
+h2 { 
+    color: #a3998f;
+    font-size: 17px;
+    font-weight: normal;
+    margin: 5px 0px 70px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 70px;
+    margin: 0px;
+}
+
+nav li {
+    display: inline-block;   
+}
+
+nav a {
+    text-decoration: none;
+    color: #a3998f; 
+    width: 130px;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 15px;   
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0a0a0a;
+}
+
+footer {
+    clear:both;
+    color: #a3998f;
+    font-size: 12px;
+    padding: 60px;
+}
+    
+#currentpg {
+    color: #0a0a0a;
+}
+    
+/* -----------------------------  HOME PAGE STYLES -------------------------    */
+
+.homeimages .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 4px 100px;
+}
+
+.homeimages .column {
+    flex: 23%;
+    max-width: 23%;
+    padding: 0 4px;
+}
+
+.homeimages .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .homeimages .column {
+    flex: 45%;
+    max-width: 50%;
+  }     
+}
+
+@media screen and (max-width: 550px) {
+  .homeimages .column {
+    flex: 100%;
+    max-width: 100%;
+  }   
+}
+
+/*Reference:
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+ */
+
+
+
+/* -----------------------------  ABOUT PAGE STYLES -------------------------    */
+
+#aboutimage {
+    position: static;  
+    float: left;
+    width: 320px; 
+    margin: 0;
+    padding: 0; 
+    border-radius: 50px;   
+}
+
+p {
+    font-size: 16px;  
+    margin-left: 390px; 
+    margin-right: 40px;
+    text-align: left;
+    line-height: 22px;
+}
+
+h4 {
+    padding: 200px 50px 30px;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;    
+}
+
+video {
+    margin-bottom: 100px;
+    width: 800px;       
+}
+
+#borderimg {
+    border: 10px solid transparent;
+    padding: 10px;
+    border-image:url(Images/AboutImages/PngItem_612347.png) 30 round;
+}
+
+
+/* -----------------------------  GALLERY PAGE STYLES -------------------------    */
+
+.galleryimages .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 4px 100px;
+  
+}
+
+.galleryimages .column {
+    flex: 24%;
+    max-width: 80%;
+    padding: 0 4px;
+}
+
+.galleryimages .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#drink {
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .galleryimages .column {
+    flex: 45%;
+    max-width: 50%;
+  }   
+}
+
+@media screen and (max-width: 550px) {
+  .galleryimages .column {
+    flex: 100%;
+    max-width: 100%;
+  }   
+}
+
+/*Reference:
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+ */
+
+/* -----------------------------  CLIENTS PAGE STYLES -------------------------    */
+
+h3{
+   font-weight: bold;
+   font-size: 25px; 
+}
+
+#clientimage {
+    position: static;
+    float: right; 
+    width:650px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    padding: 0;
+    border-radius: 50px;
+}
+
+.clientslist  a:link {
+    color: #a3998f;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 16px; 
+}
+
+.clientslist a:visited {
+    color: #0a0a0a;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.clientslist a:hover {
+    color: #0a0a0a;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.clientslist a:active {
+    color: #0a0a0a;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.clientslist ul {
+    text-align: left; 
+    width: 300px;
+    margin-left: 50px;    
+}
+
+/* -----------------------------  CONTACT PAGE STYLES -------------------------    */
+
+table { 
+    border: solid thin black;
+    padding: 30px;
+    float: right;
+    margin-top: 30px;
+    box-shadow: 1px 1px 3px #292929;
+}
+
+th, td  {
+    padding: 10px;
+    font-size: 16px;
+}
+
+caption {
+    padding-top: 25px ;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#contactimage {
+    position: static;
+    float: left;
+    width: 600px;
+    margin: 25px 0px 100px;
+    border: 0;
+    border-radius: 50px;
+}
+
+#facebookbtn {
+    width: 50px; 
+    float: left;
+    padding-left: 22px;
+    margin: 0;
+}
+
+#instagrambtn {
+    width: 50px;
+    float: right;
+    margin: 0;
+    padding-right: 20px;  
+}
+
+
+
+/*References:
+https://www.foodiesfeed.com/ 
+https://www.pexels.com/search/food/
+https://www.youtube.com/watch?v=r58XYuPwpyM
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp*/
